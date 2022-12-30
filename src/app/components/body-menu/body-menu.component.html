@@ -6,8 +6,12 @@
       [routerLink]="[urlData(item), item?.id]"
     >
       <div class="img_play">
-        <img class="thumbnail" src="{{ item?.images ? item?.images[0]?.url : item?.['album']['images'][0]?.url }}" alt="" />
-        <img class="icon-play" src="./assets/images/iconplay.svg" alt="">
+        <img
+          class="thumbnail"
+          src="{{ item?.images ? item?.images[0]?.url : item?.['album']['images'][0]?.url }}"
+          alt=""
+        />
+        <img class="icon-play" src="./assets/images/iconplay.svg" alt="" />
       </div>
       <h3>
         <p>{{ item?.name }}</p>
