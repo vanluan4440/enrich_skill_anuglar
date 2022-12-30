@@ -1,0 +1,124 @@
+nav {
+  width: 99%;
+  height: 7%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkcyan;
+  ul {
+    display: flex;
+    padding-left: 20px;
+    li {
+      position: relative;
+      list-style-type: none;
+      font-size: 13px;
+      color: #fff;
+      margin-right: 25px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: .3s linear;
+      &:hover {
+        display:inline-block;
+        border-bottom:4px solid #36e2ec;
+        padding-bottom:2px;
+      }
+
+    }
+    .active{
+      color: #fff;
+      display:inline-block;
+      border-bottom:4px solid #36e2ec;
+      padding-bottom:2px;
+    }
+  }
+  .search {
+    position: relative;
+    width: 40%;
+    padding: 10px 14px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+    .bi {
+      font-size: 13px;
+      padding: 3px 0px 0px 10px;
+    }
+    input {
+      background: none;
+      outline: none;
+      border: none;
+      padding: 0px 10px;
+      color: rgb(16, 15, 15);
+      font-size: 12px;
+    }
+  }
+  .user {
+    margin-right: 20px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    img {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 8px #131312;
+    }
+  }
+}
+.content {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  padding-top: 20px;
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #4c5262;
+    margin: 5px;
+  }
+  .buttons {
+    margin-top: 15px;
+    button {
+      width: 130px;
+      height: 30px;
+      border: 2px solid #36e2ec;
+      outline: none;
+      border-radius: 20px;
+      background: #5adae0;
+      color: #fff;
+      cursor: pointer;
+      transition: .3s linear;
+      &:hover {
+        border: 2px solid #36e2ec;
+        background: none;
+        color: #36e2ec;
+      }
+      &:nth-child(2) {
+        border: 2px solid #36e2ec;
+        background: none;
+        color: #36e2ec;
+        &:hover {
+          border: 2px solid #36e2ec;
+          background: #36e2ec;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

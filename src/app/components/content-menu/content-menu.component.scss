@@ -1,0 +1,39 @@
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+p {
+  font-size: 11px;
+  font-weight: 400;
+  color: #4c5262;
+  margin: 5px;
+}
+.buttons {
+  margin-top: 15px;
+  button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 20px;
+    background: #5adae0;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+    &:hover {
+      border: 2px solid #36e2ec;
+      background: none;
+      color: #36e2ec;
+    }
+    &:nth-child(2) {
+      border: 2px solid #36e2ec;
+      background: none;
+      color: #36e2ec;
+      &:hover {
+        border: 2px solid #36e2ec;
+        background: #36e2ec;
+        color: #fff;
+      }
+    }
+  }
+}

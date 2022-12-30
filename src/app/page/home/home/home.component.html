@@ -1,0 +1,11 @@
+<body>
+  <header>
+    <app-side-menu class="side"></app-side-menu>
+    <div class="song_side">
+      <app-header-menu (searchData)="dataSearch($event)"></app-header-menu>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </header>
+</body>

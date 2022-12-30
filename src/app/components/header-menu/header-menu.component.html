@@ -1,0 +1,19 @@
+<nav>
+  <ul>
+    <li routerLinkActive="active" routerLink="/discover">Discover</li>
+    <li routerLinkActive="active" routerLink="/album">albums</li>
+    <li routerLinkActive="active" routerLink="/artists">artists</li>
+  </ul>
+  <div class="search" *ngIf="isSearch">
+      <mat-icon >search</mat-icon>
+      <input
+        type="text"
+        formControl="searchForm"
+        (change)="onSearchChange($event.target)"
+        placeholder="Search Music..."
+      />
+  </div>
+  <div class="user">
+    <img src="{{ imgUrl }}" alt="User" title="{{ userName }}" />
+  </div>
+</nav>

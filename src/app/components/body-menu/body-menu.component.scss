@@ -1,0 +1,126 @@
+.popular_song::-webkit-scrollbar {
+  display: none;
+}
+.popular_song {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  overflow-x: hidden;
+  height: 250%;
+  .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .bi {
+      color: #a4a8b4;
+      cursor: pointer;
+      transition: 0.3s linear;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .pop_song::-webkit-scrollbar {
+    display: none;
+  }
+  .pop_song {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: start;
+    scroll-behavior: smooth;
+    margin-left: 30px;
+
+    li {
+      width: 198px;
+      height: 289px;
+      border-radius: 5px;
+      background-color: #4c5262;
+      list-style-type: none;
+      margin-right: 24px;
+      margin-bottom: 10px;
+      padding: 16px;
+      transition: 0.3s linear;
+      &:hover {
+        background: rgba(15, 15, 16, 0.1);
+      }
+      .img_play {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .thumbnail {
+          width: 100%;
+          height: 168px;
+          border-radius: 5px;
+        }
+        .icon-play {
+          position: absolute;
+          top: 108px;
+          right: 16px;
+          font-size: 50px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: none;
+        }
+
+
+        .bi {
+          position: absolute;
+          font-size: 20px;
+          cursor: pointer;
+          transition: 0.3s linear;
+          opacity: 0;
+        }
+        &:hover {
+          .bi {
+            opacity: 1;
+          }
+        }
+      }
+      h3 {
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 5px 0px 0px 5px;
+        line-height: 15px;
+        font-size: 10px;
+
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 20px;
+        }
+        .subtitle {
+          font-size: 13px;
+          color: #b3b3b3;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          ::ng-deep a {
+            color: #b3b3b3 !important;
+            text-decoration-line: none;
+          }
+        }
+      }
+    }
+    li:hover .img_play .icon-play {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.menu_side {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #111727;
+  box-shadow: 5px 0px 2px #090f1f;
+  color: #fff;
+  h1 {
+    font-size: 20px;
+    padding: 15px 0px 0px 20px;
+    font-weight: 500;
+  }
+  .playlist {
+    margin: 40px 0px 0px 0px;
+    hr{
+      margin-bottom: 10px;
+    }
+    h4 {
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      padding-bottom: 10px;
+      color: #4c5262;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: 0.3s linear;
+      &:hover {
+        color: #fff;
+        span {
+          &::before {
+            border: 2px solid #fff;
+          }
+        }
+      }
+      span {
+        position: relative;
+        margin-right: 35px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border: 2px solid #4c5262;
+          border-radius: 50%;
+          top: -4px;
+          transition: 0.3s linear;
+        }
+      }
+      .bi {
+        display: none;
+      }
+    }
+    .active {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      height: 43px;
+      mat-icon {
+        font-size: 27px;
+        margin-right: 18px;
+      }
+    }
+    .active:hover{
+      background: rgb(105, 105, 170, 0.1);
+      cursor: pointer;
+    }
+  }
+  .menu_song {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    li {
+      height: 60px;
+      position: relative;
+      list-style-type: none;
+      padding: 5px 0px 5px 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.3s linear;
+      &:hover {
+        background: rgb(105, 105, 170, 0.1);
+      }
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        color: #4c5262;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: 25px;
+      }
+      h5 {
+        font-size: 16px;
+        margin-left: 15px;
+        .subtitle {
+          font-size: 12px;
+          color: #4c5262;
+        }
+      }
+      .bi {
+        position: absolute;
+        right: 15px;
+        top: 6px;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="menu_side">
+  <h1>Spotify</h1>
+  <div class="playlist">
+    <h4 class="active" routerLink="/">
+       <mat-icon >house</mat-icon> Home
+    </h4>
+    <h4 class="active" routerLink="/search">
+     <mat-icon >search</mat-icon> Search
+    </h4>
+    <h4 class="active" routerLink="/libary">
+     <mat-icon >books</mat-icon> Library
+    </h4>
+    <hr>
+  </div>
+  <div class="menu_song">
+    <li
+      class="songItem"
+      *ngFor="let item of playListData; let i = index"
+      [routerLink]="['/playlist', item?.id]"
+      (click)="getIframePlayList(item?.type, item?.id)"
+    >
+
+      <img src="{{ item?.images[0]?.url }}" alt="Alan" />
+      <h5>
+        {{ item?.name }}
+        <div class="subtitle">{{ item?.description }}</div>
+      </h5>
+      <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+    </li>
+  </div>
+</div>

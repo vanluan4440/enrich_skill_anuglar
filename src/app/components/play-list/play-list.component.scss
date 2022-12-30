@@ -1,0 +1,43 @@
+.play-list {
+  ul::-webkit-scrollbar {
+    display: none;
+  }
+  ul {
+    height: 76vh;
+    overflow-y: scroll;
+    li {
+      display: flex;
+      .item {
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .col3 {
+        margin-left: 19px;
+        width: 40%;
+      }
+      .col4 {
+        width: 400px;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 20px;
+      }
+      .col5 {
+        width: 70px;
+        position: relative;
+        right: -187px;
+      }
+      .index {
+        width: 35px;
+      }
+    }
+  }
+  .iframe-data {
+    iframe {
+      border-radius: 0px !important;
+    }
+  }
+}

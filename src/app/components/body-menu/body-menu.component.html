@@ -1,0 +1,18 @@
+<div class="popular_song">
+  <div class="pop_song" [style.height.px]="heightScroll">
+    <li
+      class="songItem"
+      *ngFor="let item of dataShow"
+      [routerLink]="[urlData(item), item?.id]"
+    >
+      <div class="img_play">
+        <img class="thumbnail" src="{{ item?.images ? item?.images[0]?.url : item?.['album']['images'][0]?.url }}" alt="" />
+        <img class="icon-play" src="./assets/images/iconplay.svg" alt="">
+      </div>
+      <h3>
+        <p>{{ item?.name }}</p>
+        <div class="subtitle" [innerHTML]="item?.description"></div>
+      </h3>
+    </li>
+  </div>
+</div>
